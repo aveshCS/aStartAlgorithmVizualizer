@@ -7,11 +7,13 @@ body {
   position: relative;
   margin: 0 auto 15px auto;
   text-align: center;
-  color: rgb(101, 158, 223);
+  color: rgb(26, 211, 60);
   font-size: 40px;
   font-weight: bold;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* border: 2px solid black; */
 }
 
 .title span {
@@ -115,14 +117,20 @@ body {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn-outline-primary {
-  color: #df273a;
-  border-color: #df273a;
+.btn-outline-primary:hover {
+  color: red;
+  background-color: white;
+
+  border: solid 3px;
+  border-color: #754247;
+
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary {
   background-color: #df273a;
-  color: #fff;
+  color: white;
+  font-weight: bold;
+  border: solid 3px;
   border-color: #df273a;
 }
 
@@ -176,3 +184,27 @@ text-transform: capitalize;
   margin: 250px auto;
   color: #3d84a8;
 } 
+
+/* footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the footer stays on top of other content */
+}
+
+/* Add cool hover effect to each name */
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #ffc107; /* Change color on hover */
+}
